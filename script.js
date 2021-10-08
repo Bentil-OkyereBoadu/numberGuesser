@@ -9,10 +9,6 @@ const generateTarget = () => {
     return secretNumber;
 };
 
-const alert = (humanGuess) =>{
-    if(humanGuess < 0 || humanGuess > 9) return 'Number is out of range! Choose a number between 0 - 9.';
-    }; 
-
 const getAbsoluteDistance = (number1 , number2) => Math.abs(number1 - number2);
 
 const compareGuesses = (humanGuess , computerGuess , targetNumber) => {
