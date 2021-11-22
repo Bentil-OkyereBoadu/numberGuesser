@@ -12,8 +12,8 @@ const generateTarget = () => {
 const getAbsoluteDistance = (number1 , number2) => Math.abs(number1 - number2);
 
 const compareGuesses = (humanGuess , computerGuess , targetNumber) => {
-let humanDifference = getAbsoluteDistance(targetNumber - humanGuess);
-let computerDifference = getAbsoluteDistance(targetNumber - computerGuess);
+let humanDifference = getAbsoluteDistance(targetNumber , humanGuess);
+let computerDifference = getAbsoluteDistance(targetNumber , computerGuess);
 if(humanDifference < computerDifference) {
 return true;
 }
